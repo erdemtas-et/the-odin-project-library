@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+    
+
+.form-container {
+    flex: 1;
+    padding: 50px;
+    text-align: center;
+    
+    
+}
+
+ h1 {
+     
+     font-size: 3rem;
+     margin-bottom: 5rem;
+     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+ }
+
+#book-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#book-form input {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+    font-size: 1rem;
+    height: 3rem;
+    padding: 0.2rem;
+    text-indent: 10px;
+}
+
+#read-status {
+    border: solid 1px black;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+    font-size: 1rem;
+    height: 3rem;
+    padding: 0.2rem;
+    text-indent: 10px;
+}
+
+#book-form input:focus {
+    background-color: rgba(240, 144, 133, 0.13);
+    outline: rgb(226, 106, 93);
+    transform: scale(1.05);
+}
+
+#read-status {
+    box-shadow: none;
+}
+
+#book-form>button {
+    background-color: rgb(226, 106, 93);
+    border:none;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+#book-form>button:hover{
+    background-color: rgb(223, 82, 17);
+    cursor: pointer;
+}
+
+.book-container {
+    background-color: antiquewhite;
+    display: flex;
+    flex: 6;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 6rem;
+
+}
+
+.book-item {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    height: fit-content;
+    
+    max-width: 300px;
+    padding: 50px;
+    text-align: center;
+    position: relative;
+}
+
+
+
+.book-item * {
+    padding: 1rem;
+}
+.book-item>h2{
+    
+    color: rgb(226, 106, 93)
+}
+
+.book-item>h3{
+    color: rgb(146, 144, 144)
+}
+
+.book-item>p{
+
+    font-size: 0.8rem;
+    font-weight: bolder;
+}
+
+.book-item img {
+    width: 80%;
+}
+
+.status-button {
+    background-color: lightgray;
+    border: none;
+    color: white ;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.book-item>button:hover{
+    transform: scale(1.1);
+    
+}
+
+
+.delete {
+    background-color: red;
+    font-size: 1rem;
+    font-weight: bolder;
+    border: none;
+    color: antiquewhite;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+}
+
+.completed {
+    background-color: green;
+}
+
+.not-read {
+    background-color: salmon;
+}
